@@ -1,3 +1,5 @@
+# Based on in28minutes-devops https://github.com/in28minutes/devops-master-class
+
 # Currency Exchange Micro Service - H2
 
 Run com.in28minutes.microservices.currencyconversionservice.CurrencyConversionServiceApplicationH2 as a Java Application.
