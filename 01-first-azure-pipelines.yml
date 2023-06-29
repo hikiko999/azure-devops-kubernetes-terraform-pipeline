@@ -31,3 +31,11 @@ jobs:
   steps:
   - script: echo Job2
     displayName: 'Run another one-line script'
+- job: Job4
+  # Fan in Fan out
+  dependsOn:
+  - Job2
+  - Job3
+  steps:
+  - script: echo Job2
+    displayName: 'Run another one-line script'
