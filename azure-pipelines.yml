@@ -20,7 +20,7 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'lcrosendo-dockerhub'
-        repository: 'in28min/currency-exchange-devops'
+        repository: 'hikiko999/in28min/currency-exchange-devops'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
