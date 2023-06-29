@@ -21,6 +21,7 @@ stages:
 - stage: DevDeploy
   jobs:
   # additional features for deployments
+  # might ask for permissions when run first time
   - deployment: DevDeployJob
     environment: Dev
     strategy:
