@@ -1,4 +1,6 @@
-# Based on in28minutes-devops https://github.com/in28minutes/devops-master-class
+# This is for personal learning
+# Credits to in28Minutes and their course Devops Master Class
+# https://github.com/in28minutes/devops-master-class
 
 # Currency Exchange Micro Service - H2
 
