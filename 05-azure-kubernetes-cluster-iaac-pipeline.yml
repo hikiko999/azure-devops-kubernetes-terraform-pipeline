@@ -32,5 +32,6 @@ steps:
   inputs:
     command: 'destroy'
     workingDirectory: '$(System.DefaultWorkingDirectory)/configuration/iaac/azure/kubernetes'
+    commandOptions: '-var client_id=$(client_id) -var client_secret=$(client_secret) -var ssh_public_key=$(publickey.secureFilePath)'
     environmentServiceName: 'azure-resource-manager-service-connection'
     allowTelemetryCollection: true
