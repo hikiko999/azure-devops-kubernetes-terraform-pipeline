@@ -5,7 +5,7 @@ resources:
 - repo: self
 
 variables:
-  tag: 28 # '$(Build.BuildId)'
+  tag: '$(Build.BuildId)'
 
 # Stage 1
 # Build Docker Image
@@ -19,14 +19,14 @@ stages:
     pool:
       vmImage: ubuntu-latest
     steps:
-    # - task: Docker@2
-    #   inputs:
-    #     containerRegistry: 'lcrosendo-dockerhub'
-    #     repository: 'hikiko999/currency-exchange-azdevops'
-    #     command: 'buildAndPush'
-    #     Dockerfile: '**/Dockerfile'
-    #     tags: '$(tag)'
-    # Publish Build Artifact
+    - task: Docker@2
+      inputs:
+        containerRegistry: 'lcrosendo-dockerhub'
+        repository: 'hikiko999/currency-exchange-azdevops'
+        command: 'buildAndPush'
+        Dockerfile: '**/Dockerfile'
+        tags: '$(tag)'
+    Publish Build Artifact
 
     # Need to copy artifact to be used because none at first
     - task: CopyFiles@2
